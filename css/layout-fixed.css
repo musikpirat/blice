@@ -1,0 +1,328 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Layout Styling (DIV Positioning)
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout is based on the Zen Columns layout method.
+ *   http://drupal.org/node/201428
+ *
+ * Only CSS that affects the layout (positioning) of major elements should be
+ * listed here.  Such as:
+ *   display, position, float, clear, width, height, min-width, min-height
+ *   margin, border, padding, overflow
+ */
+
+
+/*
+ * Body
+ */
+body {
+}
+
+#page-wrapper,
+.region-page-closure {
+  /*
+   * If you want to make the page a fixed width and centered in the viewport,
+   * this is the standards-compliant way to do that. See also the ie6.css file
+   * for the necessary IE5/IE6quirks hack to center a div.
+   */
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+.img_right {
+ float: right;
+ margin-left: 5px;
+}
+
+a {
+ color: #C63A00;
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+.teaser, .node .image-attach-teaser {
+}
+
+#page {
+}
+
+/*
+ * Header
+ */
+#header {
+  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#header .field-content {
+}
+
+#header .block div p
+{
+ margin-top: 0px;
+}
+
+#header .section {
+}
+
+#search-box {
+}
+
+.region-header {
+  clear: both; /* Clear the logo */
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+  position: relative;
+  clear: both;
+}
+
+#main {
+}
+
+/*
+ * Content
+ */
+#content,
+.no-sidebars #content {
+  float: left; /* LTR */
+  width: 1000px;
+  margin-left: 0; /* LTR */
+  margin-right: -960px; /* LTR */ /* Negative value of #content's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #content .section. */
+}
+
+.sidebar-first #content {
+  float: left; /* LTR */
+  width: 940px;
+  margin-left: 0px; /* LTR */ /* The width of .region-sidebar-first. */
+  margin-right: -940px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.sidebar-second #content {
+  float: left; /* LTR */
+  width: 700px;
+  margin-left: 0; /* LTR */
+  margin-right: -700px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  float: left; /* LTR */
+  width: 640px;
+  margin-left: 0px; /* LTR */ /* The width of .region-sidebar-first */
+  margin-right: -640px; /* LTR */ /* Negative value of #content's width + left margin. */
+}
+
+body:not(.front) #content .section {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background-color: #F3F3F3;
+}
+
+/*
+ * Navigation
+ */
+#navigation {
+  float: left; /* LTR */
+  width: 100%;
+  margin-left: 0; /* LTR */
+  margin-right: -100%; /* LTR */ /* Negative value of #navigation's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to #navigation .section. */
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  font-family: arial;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  height: 44px;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+#navigation a:hover {
+ background-color: #f3f3f3;
+}
+
+.with-navigation #content,
+.with-navigation .region-sidebar-first,
+.with-navigation .region-sidebar-second {
+  margin-top: 60px; /* Set this to the same value as the navigation height above. */
+}
+
+#navigation .section {
+}
+
+#navigation ul /* Primary and secondary links */ {
+  margin: 14px 0 0 0;
+  padding: 0;
+  text-align: left; /* LTR */
+}
+
+#navigation li /* A simple method to get navigation links to appear in one line. */ {
+  float: left; /* LTR */
+  padding: 0 20px 0 0; /* LTR */
+}
+
+
+#navigation li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+/*
+ * First sidebar
+ */
+.region-sidebar-first {
+  float: left; /* LTR */
+  width: 60px;
+  margin-left: 660px; /* LTR */
+  margin-right: -720px; /* LTR */ /* Negative value of .region-sidebar-first's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-first .section. */
+}
+
+.region-sidebar-first .section {
+  margin: 0 20px 0 0; /* LTR */
+  padding: 0;
+}
+
+/*
+ * Second sidebar
+ */
+.region-sidebar-second {
+  float: left; /* LTR */
+  width: 300px;
+  margin-left: 700px; /* LTR */ /* Width of content + sidebar-first. */
+  margin-right: -700px; /* LTR */ /* Negative value of .region-sidebar-second's width + left margin. */
+  padding: 0; /* DO NOT CHANGE. Add padding or margin to .region-sidebar-second .section. */
+  font-size: 0.8em;
+}
+
+.region-sidebar-second .section {
+  margin: 0px 0 0 20px; /* LTR */
+  padding: 0;
+}
+
+.region-sidebar-second .block {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* See also the #page-wrapper declaration above that this div shares. */ {
+}
+
+.region-page-closure .block-menu
+{
+ float: left;
+ font-size: 0.7em;
+}
+
+/*
+ * Prevent overflowing content
+ */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#navigation {
+  overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+}
+
+/*
+ * If a div.clearfix doesn't have any content after it and its bottom edge
+ * touches the bottom of the viewport, Firefox and Safari will mistakenly
+ * place several pixels worth of space between the bottom of the div and the
+ * bottom of the viewport. Uncomment this CSS property to fix this.
+ * Note: with some over-large content, this property might cause scrollbars
+ * to appear on the #page-wrapper div.
+ */
+/*
+#page-wrapper {
+  overflow-y: hidden;
+}
+*/
+
+#widget
+{
+        position: fixed;
+        margin-left: -35px;
+}
+
+#widget ul
+{
+	list-style : none;
+}
+
+#widget a
+{
+        font-weight: bold;
+}
+
+#widget img
+{
+        position: fixed;
+        top: 220px;
+        z-index: 1;
+}
+
+#widget ul li ul
+{
+        visibility: hidden;
+        position: fixed;
+        top: 220px;
+        margin-left: 45px;
+        margin-top: 10px;
+        background-color: #fff;
+        border-style: solid;
+        border-width: 1px;
+        width: 60px;
+}
+
+#widget ul li:hover ul
+{
+        visibility: visible;
+        width: 200px;
+        z-index: 100;
+}
+

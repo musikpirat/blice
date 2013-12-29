@@ -1,0 +1,25 @@
+#sotd_player div {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#sotd_player .player {
+    background: url("/public/one-song-per-day-2013/css/circle-sprite.png") no-repeat scroll 0 0 transparent;
+    height: 104px;
+    position: relative;
+    width: 104px;
+}
+
+#sotd_player .player:hover {
+	background-position: 0px -104px;
+}
+
+#sotd_player .player.playing {
+	background-position: 0px -208px;
+}
+
+#sotd_player .player.playing:hover {
+	background-position: 0px -312px;
+}

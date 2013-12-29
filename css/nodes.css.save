@@ -1,0 +1,119 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+
+.node /* Node wrapper */ {
+ margin-bottom: 30px;
+ clear: both;
+ border-bottom: 1px solid;
+}
+
+.node-sticky /* A sticky node (displayed before others in a list) */ {
+}
+
+.node-unpublished /* Unpublished nodes */ {
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-by-viewer /* A node created by the current user */ {
+}
+
+.node-teaser /* A node displayed as teaser */ {
+	background-color: #f3f3f3;
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+.node-type-page /* Page content node */ {
+}
+
+.node-type-story /* Story content node */ {
+}
+
+.node h2.title /* Node title */ {
+  font-size: 1.3em;
+	background-color: #E09020;
+	display: block;
+	width: 100%;
+}
+
+.node h2.title a /* Node title */ {
+	color: #f0f0f0;
+	padding-left: 5px;	
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
+  color: #c00;
+}
+
+.node .picture /* The picture of the node author */ {
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.short_url {
+ float: left;
+ height: 15px;
+}
+
+.node .meta /* Wrapper for submitted and terms data */ {
+  font-size: 0.8em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.node .submitted /* The "posted by" information */ {
+ float: right;
+ display: block;
+ height: 15px;
+}
+
+.node .terms /* Node terms (taxonomy) */ {
+ clear: both;
+ font-size: 0.8em;
+}
+
+.node .content /* Node's content wrapper */ {
+ clear: both;
+ margin-bottom: 15px;
+ padding-top: 10px;
+ margin-left: 10px;
+}
+
+.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
+ clear: both;
+ display: block;
+}
+
+.node ul.links .first /* Node links. See also the ul.links declaration in the pages.css. */ {
+ font-weight: bold;
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}

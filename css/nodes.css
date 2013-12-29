@@ -1,0 +1,205 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+.mediawrapper_block {
+  padding-right: 5px;
+}
+
+.node-teaser .mediawrapper_block {
+    left: 10px;
+    max-width: 180px;
+    position: absolute;
+    top: 20px;
+}
+
+.node /* Node wrapper */ {
+ margin-bottom: 15px;
+ margin-bottom: 15px;
+ clear: both;
+ background-color: #f3f3f3;
+}
+
+.print-mail {
+    background: url("../images/mail-icon.png") no-repeat scroll 0 0 transparent;
+    padding-left: 22px;
+    background-size: 20px 20px;
+}
+
+.comment_add a {
+    background: url("../images/sprechblase.png") no-repeat scroll 0 5px transparent;
+    padding-left: 22px;
+}
+
+#edit-vote-wrapper > label {
+    color: #C63A00;
+}
+
+.node form.fivestar-widget {
+    border-top: 1px solid;
+    margin-top: 15px;
+}
+
+h1, h2, h3 {
+  font-size: 1em;
+  font-family: arial;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #C63A00;
+}
+
+.node-sticky /* A sticky node (displayed before others in a list) */ {
+}
+
+.node-unpublished /* Unpublished nodes */ {
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-by-viewer /* A node created by the current user */ {
+}
+
+.node-teaser /* A node displayed as teaser */ {
+ position: relative;
+ border-bottom: 1px solid;
+ border-top: 1px solid;
+ margin-bottom: 30px;
+}
+
+.node-teaser .content {
+ 	padding-left: 200px;
+}
+
+.node-teaser .content p {
+        margin-top: -5px;
+}
+
+.node .image-attach-teaser {
+    left: 0;
+    position: absolute;
+    top: 10px;
+}
+.teaser, .node .image-attach-teaser a img {
+        float: right;
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+.node-type-page /* Page content node */ {
+}
+
+.node-type-story /* Story content node */ {
+}
+
+.node h2.title /* Node title */ {
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+.node h2.title a /* Node title */ {
+	padding-left: 0px;	
+        margin-left: 210px;
+	margin-top: 10px;
+        display: block;
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
+  color: #c00;
+}
+
+.node .picture /* The picture of the node author */ {
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.short_url {
+ float: left;
+ height: 15px;
+}
+
+.node .meta /* Wrapper for submitted and terms data */ {
+  font-size: 0.8em;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+}
+
+.front .node .meta, .section-tags .node .meta {
+    left: 205px;
+}
+
+
+.section-tags .node .meta .terms, .section-tags .node .meta .short_url {
+    display: none;
+}
+
+.node .meta span {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.node .submitted /* The "posted by" information */ {
+ float: right;
+ display: block;
+ height: 15px;
+}
+
+.node .terms /* Node terms (taxonomy) */ {
+ clear: both;
+ font-size: 0.8em;
+}
+
+.node .content /* Node's content wrapper */ {
+ clear: both;
+ margin-bottom: 15px;
+ padding-top: 10px;
+ margin-left: 10px;
+ margin-right: 14px;
+ padding-top: 10px;
+ text-align: justify;
+ min-height: 100px;
+ -moz-hyphens: auto;
+ -o-hyphens: auto;
+ -webkit-hyphens: auto;
+ -ms-hyphens: auto;
+ -hyphens: auto; 
+}
+
+.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
+ clear: both;
+ display: block;
+}
+
+.node ul.links .first /* Node links. See also the ul.links declaration in the pages.css. */ {
+ font-weight: bold;
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}

@@ -1,0 +1,60 @@
+/* $Id$ */
+
+/**
+ * @file
+ * Navigation Styling
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+    background-color: #F3F3F3;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+
+#secondary-menu li {
+    display: block;
+    float: left;
+    padding: 0;
+    text-align: center;
+    width: 25%;
+    min-width: 200px;
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}

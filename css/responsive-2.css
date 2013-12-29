@@ -1,0 +1,118 @@
+@media only screen and (max-width: 479px) {
+
+#social_bookmarks {
+	height: 105px;
+}
+
+.social_share_privacy_area li {
+	height: 30px;
+}
+
+.social_share_privacy_area .gplus, .social_share_privacy_area .twitter, .social_share_privacy_area .facebook, .social_share_privacy_area .settings_info {
+	width: 100% !important;
+}
+
+.region-navigation {
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+}
+
+.feed-icon, .ml-icon, .twitter-icon, .facebook-icon {
+	float: left !important;
+	margin-top: -20px !important;
+	margin-left: 5px;
+}
+
+.node .image-attach-teaser {
+	width: 100% !important;
+	text-align: center;
+	margin-top: 0px !important;
+}
+
+.teaser {
+	width: 100% !important;
+	text-align: center;
+}
+
+.teaser, .node .image-attach-teaser a img {
+	float: none;
+        position: relative  !important;
+        margin-left: -5px;
+}
+
+.image-attach-teaser, .node-teaser .mediawrapper_block {
+	position: relative !important;
+	top: -5px !important;
+}
+
+.node-teaser {
+	position: relative;
+}
+
+.node-teaser .content {
+	padding-left: 0px !important;
+}
+
+.sidebar, .node ul.links, .read-more, .block-menu, .node .meta {
+    display: none !important;
+}
+
+
+#header .region-header .block {
+    display: none;
+}
+
+#navigation {
+	top: -135px;
+	height: 180px !important;
+	position: absolute;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#navigation li {
+	height: 2em;
+}
+
+#page-wrapper, .region-page-closure {
+	max-width: 100%;
+}
+
+.node h2.title a {
+       	margin-left: 5px;
+	padding: 0px !important;
+}
+
+.with-navigation #content, .with-navigation .region-sidebar-first, .with-navigation .region-sidebar-second  {
+	margin-top: 50px !important;
+}
+
+#page-wrapper {
+ 	left: 0px !important;
+	position: absolute;
+}
+
+.sidebar-second #content {
+	max-width: 100% !important;
+}
+
+.node-teaser .content p {
+        margin-left: 0px;
+	margin-top: 0px;
+}
+
+.node-teaser .mediawrapper_block span {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.node-teaser .mediawrapper_block {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+}

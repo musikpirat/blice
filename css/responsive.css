@@ -1,0 +1,112 @@
+@media only screen and (min-width: 480px) and (max-width: 999px) {
+.node-teaser {
+        position: relative;
+}
+
+.region-header .block .content {
+    background-color: white !important;
+}
+
+.social_share_privacy_area li {
+        height: 30px;
+}
+
+.social_share_privacy_area .gplus, .social_share_privacy_area .twitter, .social_share_privacy_area .facebook, .social_share_privacy_area .settings_info {
+        width: 50% !important;
+}
+
+
+#edit-comment, #social_bookmarks {
+	max-width: 100%;
+}
+
+.region-header .block .content img {
+    	padding-top: 20px;
+}
+
+.sidebar, .node ul.links, .read-more, .block-menu, .node .meta {
+    display: none !important;
+}
+
+
+#header .region-header .block {
+    display: none;
+}
+
+#header .region-header .region-count-1 {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+#navigation {
+	top: -150px;
+	left: 25%;
+	width: 75% !important;
+	height: 150px !important;
+	position: absolute;
+	border: 0px;
+}
+
+#navigation li {
+	height: 2em;
+}
+
+.feed-icon, .ml-icon, .twitter-icon, .facebook-icon {
+    float: left !important;
+    height: 44px;
+    width: 44px;
+    margin: -8px 5px 1em 0  !important;
+}
+
+#page-wrapper, .region-page-closure {
+        max-width: 100%;
+}
+
+.teaser, .node .image-attach-teaser a img {
+        top: 10px;
+        position: absolute;
+        margin-left: -5px;
+        float: left;
+}
+
+.node-teaser .content p {
+        margin-top: -10px;
+}
+
+.node-teaser {
+	overflow: hidden;
+}
+
+.node h2.title {
+        display: inline-block !important;
+        float: left;
+}
+
+.node h2.title a {
+        margin-left: 210px;
+	margin-top: 10px;
+        display: block;
+}
+
+.with-navigation #content, .with-navigation .region-sidebar-first, .with-navigation .region-sidebar-second  {
+        margin-top: 0px !important;
+}
+
+.node h2.title a {
+        padding: 0px !important;
+}
+
+#page-wrapper {
+        left: 0px !important;
+        position: absolute;
+}
+
+.sidebar-second #content {
+        width: 99% !important;
+}
+
+#main {
+	margin-left: 5px;
+}
+}
