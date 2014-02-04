@@ -175,6 +175,10 @@ h1, h2, h3 {
  font-size: 0.8em;
 }
 
+blockquote, .node .content p:first-of-type {
+    font-style: italic;
+}
+
 .node .content /* Node's content wrapper */ {
  clear: both;
  margin-bottom: 15px;
