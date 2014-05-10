@@ -190,7 +190,9 @@ function blice_links($links, $attributes = array('class' => 'links')) {
   if (!is_array($links)) {
     return '';
   }
-  uksort($links, "blice_link_sort");
+  if (($attributes['id'] != 'main-menu') && ($attributes['id'] != 'secondary-menu')) {
+    uksort($links, "blice_link_sort");
+  }
   return theme_links($links, $attributes);
 }
 
